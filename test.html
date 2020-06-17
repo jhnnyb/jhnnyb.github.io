@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="device-width, initial-scale = 1.0">
+
+	<title>john baptista</title>
+
+	<link rel="stylesheet" href="css/justifiedGallery.css"/>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.5.1.js"></script>
+	<script src="js/jquery.justifiedGallery.js"></script>
+
+    <style>
+        html { overflow-y: scroll; } /* To always show the scrollbar and avoid the flickering problem. */
+    </style>
+</head>
+
+<body>
+    <h1>Layout test</h1>
+
+    <div class="justified-gallery" id="test">
+		<div> <img src="photos/001.png"/> </div>
+		<div> <img src="photos/002.jpg"/> </div>
+		<div> <img src="photos/003.jpg"/> </div>
+    </div>
+
+    <script>
+    $("#test").justifiedGallery(
+		{
+			rowHeight: 100,
+			margins: 3
+
+		});
+    </script>
+
+</body>
+
+</html>
